@@ -283,23 +283,25 @@ nav{
 
 /*----------- frame2 -----------*/
 .main-phrase1{
-    height: 35vh;
+    height: 33vh;
     background-color: #8c1c6c;
 }
 .phrase1{
-    height: 35vh;
+    height: 33vh;
     background-color: #8c1c6c;
     background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 10% 0 10%;
+    padding: 0 15% 0 15%;
 }
 .phrase1 p{
     color: white;
     font-family: "Righteous", sans-serif;
-    font-size: 2.1em;
+    font-size: 2em;
 }
+
+/*--- logros ---*/
 
 .logros-container{
     height: 65vh;
@@ -315,16 +317,16 @@ nav{
     align-items: center;
     height: 90%;
     width: calc(100%/3);
-    padding: 0 0 0 0;
 }
 .logros p {
     font-family: "Righteous", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 0 20%;
     text-align: center;
+    margin-top: 30px;
 }
 .svg3{
-    width: 40%;
+    width: 30%;
     fill: #a42c83;
 }
 
@@ -337,9 +339,109 @@ nav{
 
 .sevicios-title-background{
     width: 100%;
-    height: 10vh;
+    height: 20vh;
     background-color: #8c1c6c;
 }
+.sevicios-title-gradientBackground{
+    height: 20vh;
+    background-color: #8c1c6c;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sevicios-title-gradientBackground h2{
+    color: white;
+    font-family: "Righteous", sans-serif;
+    font-size: 3em;
+}
 
+/*--- CARDS ---*/
 
+.servicios-cards{
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    padding: 0 6% 0 6%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/4);
+    padding: 4% 3% 4% 3%;
+}
+.card-p{
+    font-family: "League Gothic", sans-serif;
+    font-variation-settings: "wdth" 410;
+    display: flex;
+    justify-content: center; 
+    font-size: 2.5em;   
+}
+.card-img{
+    height: 60%;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-p{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.card-link-container{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#8c1c6c;
+    margin: 0 8%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+    height: 60%;
+}
+.card-link:hover{
+    background-color: #a84c91;
+    transition: all ease .3s;
+}
+.card-link a{
+    color: white;
+    text-decoration: none;
+    padding-top: 2%;
+    margin-right: 5px;
+}
+.card-link-container img{
+    width: 10%;
+    cursor: pointer;
+}
 
+/*----------- frame4 -----------*/
+
+.cotizacion-container{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cot-title-container{
+    background-color:#8c1c6c;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+}
+.cotizacion-img1{
+    width: 60%;
+}
+.cot-request-container{
+    height: 20%;
+}
+.cot-request-container img{
+    height: 90%;
+}
