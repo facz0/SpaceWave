@@ -101,12 +101,6 @@ nav{
     height: 100%;
 }
 
-.slider-section img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .btn-left, .btn-right{
     display: flex;
     position: absolute;
@@ -127,32 +121,37 @@ nav{
 }
 
 /*----- CARRUSEL 1 -----*/
+    .background1{
+        background-image: url(img-css/carrusel-network.jpg);
+        background-size: cover;
+    }
+
     .h2-c1{
         font-family: "Righteous", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 4.5em;
-        position: absolute;
+        position: relative;
         color: white;
         top: 16%;
-        left: 70px;
+        left: 5.5%;
     }
     .p-c1{
         font-family: "League Gothic", sans-serif;
         font-variation-settings: "wdth" 110;
         font-size: 3em;
-        position: absolute;
+        position: relative;
         color: white;
-        top: 52%;
-        left: 70px;
+        top: 16%;
+        left: 5.5%;
     }
     .section-c1{
         width: 215px;
         height: 9%;
         background-color: #a42c83;
-        position: absolute;
-        top: 74%;
-        left: 70px;
+        position: relative;
+        top: 18%;
+        left: 5.5%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -178,32 +177,37 @@ nav{
     }
 
 /*----- CARRUSEL 2 -----*/
+    .background2{
+        background-image: url(img-css/home_a_hero_d.jpg);
+        background-size: cover;
+    }
+
     .h2-c2{
         font-family: "Righteous", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 5em;
-        position: absolute;
+        position: relative;
         color: white;
         top: 25%;
-        left: 1440px;
+        left: 5.5%;
     }
     .p-c2{
         font-family: "Righteous", sans-serif;
         font-variation-settings: "wdth" 110;
         font-size: 3em;
-        position: absolute;
+        position: relative;
         color: white;
-        top: 45%;
-        left: 1440px;
+        top: 25%;
+        left: 5.5%;
     }
     .section-c2{
         width: 215px;
         height: 9%;
         background-color: #a42c83;
-        position: absolute;
-        top: 59%;
-        left: 1440px;
+        position: relative;
+        top: 28%;
+        left: 5.5%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -230,33 +234,37 @@ nav{
 
 
 /*----- CARRUSEL 3 -----*/
+    .background3{
+        background-image: url(img-css/carrusel-datacenter.jpg);
+        background-size: cover;
+    }
 
     .h2-c3{
         font-family: "Righteous", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 5em;
-        position: absolute;
+        position: relative;
         color: white;
         top: 25%;
-        left: 2810px;
+        left: 8%;
     }
     .p-c3{
         font-family: "Righteous", sans-serif;
         font-variation-settings: "wdth" 110;
         font-size: 3em;
-        position: absolute;
+        position: relative;
         color: white;
-        top: 45%;
-        left: 2810px;
+        top: 25%;
+        left: 8%;
     }
     .section-c3{
         width: 215px;
         height: 9%;
         background-color: #a42c83;
-        position: absolute;
-        top: 69%;
-        left: 2810px;
+        position: relative;
+        top: 26%;
+        left: 8%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -424,24 +432,129 @@ nav{
 /*----------- frame4 -----------*/
 
 .cotizacion-container{
-    height: 92vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .cot-title-container{
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
     background-color:#8c1c6c;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     position: absolute;
+    display: flex;
+    align-items: center;
 }
 .cotizacion-img1{
-    width: 60%;
+    width: 50%;
+    position: relative;
+    left: 40%;
+    top: -15%;
 }
 .cot-request-container{
-    height: 20%;
+    width: 12%;
+    height: 35%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 12%;
+    border-radius: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+.cot-request-container:hover{
+    background-color: rgb(220, 220, 220);
+    text-decoration: underline;
+    transition: all ease 0.3s;
 }
 .cot-request-container img{
-    height: 90%;
+    width: 30%;
+}
+
+.cot-request-container a{
+    text-decoration: none;
+    color: black;
+    font-family: "Righteous", sans-serif;
+}
+
+.cot-title-container-h2{
+    font-family: "Righteous", sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 2.1em;
+    width: 30%;
+    position: absolute;
+    left: 10%;
+}
+
+/*----------- frame5 -----------*/
+.partenrs-container{
+    width: 100%;
+    height: 90vh;
+}
+
+.background-partners{
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
+    background-color:#8c1c6c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+.background-partners p{
+    font-family: "Righteous", sans-serif;
+    font-size: 2em;
+}
+
+.container-carrusel-partners{
+    width: 90%;
+    height: 50%;
+    background-color: #4b474a;
+    margin: auto;
+    position: relative;
+    top: 15%;
+}
+
+.carruseles-partners{
+    width: 175%;
+    height: 99%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.partners-carusel-item{
+    width: calc(100% / 7);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partners-carusel-item img{
+    width: 100%;
+    height: 50%;
+}
+
+.huawei img{
+    padding: 0;
+}
+
+.ubiquiti img{
+    padding: 0 20px 0 20px;
+}
+
+.starlink img{
+    padding: 0 0 0 60px;
+}
+
+footer{
+    height: 65vh;
+    background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
+    background-color:#8c1c6c;
 }
