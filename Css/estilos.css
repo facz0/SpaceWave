@@ -48,10 +48,12 @@ nav{
 .a-nav{
     color: white;
     text-decoration: none;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
 }
 
 .a-nav:hover{
-    text-decoration: underline;
+    
     color: rgb(169, 169, 169);
 }
 
@@ -65,6 +67,7 @@ nav{
     margin: 2px 0 2px 0;
     justify-content: center;
     align-items: center;
+    font-family: "League Spartan", sans-serif;
 }
 
 .coti-nav:hover{
@@ -76,9 +79,7 @@ nav{
     text-decoration: none;
 }
 
-.a-coti-nav:hover{
-    text-decoration: underline;
-}
+
 
 /*-- carrusell --*/
 
@@ -516,10 +517,11 @@ nav{
 .container-carrusel-partners{
     width: 90%;
     height: 50%;
-    background-color: #4b474a;
+    background-color: #ffffff;
     margin: auto;
     position: relative;
     top: 15%;
+    overflow: hidden;
 }
 
 .carruseles-partners{
@@ -553,8 +555,113 @@ nav{
     padding: 0 0 0 60px;
 }
 
+/*-----------------------   Footer   ------------------------*/
+
 footer{
-    height: 65vh;
+    height: 80vh;
     background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.69));
     background-color:#8c1c6c;
+    color: white;
+}
+
+.footer-sections{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90%;
+}
+
+/*Aplica a las 3 columnas del footer*/
+.foot-sec{
+    width: calc(72% / 3);
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+/*aplica a los h2 de las 3 columnas del footer*/
+.foot-sec h2{
+    font-family: "League Gothic", sans-serif;
+    font-variation-settings: "wdth" 100;
+    font-weight: 100;
+    font-size: 2.1em;
+    margin-bottom: 5%;
+}
+/*Aplica a los primeros 3 div de la primera columna del footer*/
+.foot-sec1-div1, .foot-sec1-div2, .foot-sec1-div3{
+    display: flex;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.1em; 
+    padding: 2px 0 2px 0;
+}
+.foot-sec1-div1 i, .foot-sec1-div2 i, .foot-sec1-div3 i {
+    padding-right: 2%;
+}
+/*Aplica al cuarto div de la primera columna del footer*/
+.foot-sec1-div4{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    margin-top: 5%;
+    font-family: "League Spartan", sans-serif;
+}
+.foot-sec1-div4 p{
+    height: 20%;
+}
+.foot-sec1-div4 img{
+    width: 45%;
+}
+/*Aplica a la segunda columna ul*/
+.foot-sec2 ul{
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+    list-style: none;
+}
+.foot-sec2 ul li{
+    margin-bottom: 5%;
+}
+.foot-sec2 ul li::before{
+    content: "-";
+    margin-right: 0.3em;
+}
+.foot-sec2 div{
+    display: flex;
+    align-items: center;
+    font-family: "League Gothic", sans-serif;
+    font-variation-settings: "wdth" 100;
+    font-size: 1.3em;
+    margin-top: 5%;
+}
+/*Aplica a la tercera columna - todos los div*/
+.foot-sec3 div{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+.foot-sec3 div a{
+    color: white;
+    text-decoration: none;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+}
+.foot-sec3 div a:hover{
+    text-decoration: underline;
+}
+.foot-sec3 div i{
+    margin-right: 2%;
+}
+.foot-sec3-img{
+    width: 80%;
+    margin-top: 5%;
+}
+/*Aplica a los derechos reservadps*/
+.foot-reserv{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    font-family: "League Spartan", sans-serif;
 }

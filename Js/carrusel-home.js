@@ -3,6 +3,7 @@ const btnright = document.querySelector(".btn-right")
 const slider = document.querySelector("#slider")
 const sliderSection = document.querySelectorAll(".slider-section")
 
+
 //le damos el evento click a los íconos
 btnleft.addEventListener("click", e => moveToLeft())
 btnright.addEventListener("click", e => moveToRight())
@@ -44,3 +45,4 @@ function moveToLeft() {
         slider.style.transition = "all ease .6s"
     }
 }
+
