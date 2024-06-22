@@ -906,7 +906,7 @@ textarea:focus, .i-num:focus, .i-comp:focus,
     height: 10%;
     width: 100%;
     font-family: "League Spartan", sans-serif;
-    color: #ffffff;
+    color: #b03c8f;
     padding-left: 20%;
 }
 .datos-list{
@@ -916,6 +916,8 @@ textarea:focus, .i-num:focus, .i-comp:focus,
     padding: 5% 0;
 }
 .datos-list-border{
+    display: flex;
+    flex-direction: column;
     border: 2px solid rgb(157, 148, 136);
     width: 80%;
     color: #ffffff;
@@ -923,7 +925,15 @@ textarea:focus, .i-num:focus, .i-comp:focus,
 }
 i{
     color: rgb(157, 148, 136);
+    margin-right: 2%;
 }
 .datos-i-flex{
     display: flex;
+    align-items: center;
+    margin: 4%;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.1em;
+}
+.datos1{
+    margin-top: 14%;
 }
