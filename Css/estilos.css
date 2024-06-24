@@ -33,7 +33,6 @@ nav{
     top: 0;
     z-index: 1;
 }
-
 .ul-nav{
     display: flex;
     justify-content: space-evenly;
@@ -44,18 +43,53 @@ nav{
     list-style-type: none;
     align-items: center;
 }
-
+.li-nav{
+    width: 13%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+}
+.li-nav:hover .sub-nav{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+.sub-nav{
+    width: 15%;
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 100%;
+    background-color: #4b474a;
+    list-style: none;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    padding-left: .7%;
+    visibility: hidden;
+    opacity: 0;
+}
+.sub-nav a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+.sub-nav a:hover{
+    color: #ab4c90
+}
 .a-nav{
     color: white;
     text-decoration: none;
     font-family: "League Spartan", sans-serif;
     font-size: 1.4em;
 }
-
 .a-nav:hover{
-    
     color: #ab4c90;
 }
+
+
 
 .coti-nav{
     display: flex;
@@ -1095,5 +1129,30 @@ i{
         width: 100%;
         height: auto;
     }
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
+.benefits-container{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+.firewall-box{
+    overflow: hidden;
+}
+.firewall-p{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.firewall-content{
+    height: 0;
 }
 
