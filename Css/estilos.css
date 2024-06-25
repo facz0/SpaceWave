@@ -1131,10 +1131,85 @@ i{
     }
 }
 
+/*--------------------------------- Servicios site ---------------------------------*/
 
-
-
-
+.fibraOptica{
+    width: 90%;
+    height: 85vh;
+    margin: 3% auto;
+    display: flex;
+}
+.FO-definition{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.FO-definition h2{
+    width: 50%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    border-left: 5px solid #a42c83;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.FO-p{
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.FO-p div{
+    background-color: #8c1c6c;
+    color: #ffffff;
+    width: 92%;
+    height: 90%;
+    padding: 3% 3%;
+    border-radius: 20px;
+    font-family: "League Spartan", sans-serif;
+}
+.FO-img{
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.FO-img img{
+    width: 60%;
+}
+.FO-benef{
+    width: 50%;
+}
+.FO-benef h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.FO-benef-firewall{
+    overflow: hidden;
+}
+.FO-benef-firewall-title{
+    font-family: "Poppins", sans-serif;
+    height: 32px;
+    background-color: #a42c83;
+}
+.FO-benef-firewall-div{
+    display: flex;
+    font-family: "League Spartan", sans-serif;
+    height: 0;
+    transition: all .3s ease;
+}
+.FO-benef-firewall-div p{
+    padding: 3% 0 1% 1.5%;
+    
+}
+.FO-benef-firewall-div img{
+    width: 50%;
+    padding: 3%
+}
 
 /*----------------------------------------------------------------------------------------------------*/
 
