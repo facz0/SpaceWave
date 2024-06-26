@@ -1135,7 +1135,7 @@ i{
 
 .fibraOptica{
     width: 90%;
-    height: 85vh;
+    /* height: 85vh; */
     margin: 3% auto;
     display: flex;
 }
@@ -1155,6 +1155,7 @@ i{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 2em;
+    margin-bottom: 3%;
 }
 .FO-p{
     height: 44%;
@@ -1187,14 +1188,21 @@ i{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 2em;
+    height: 48px;
+    margin-bottom: 4%;
+    border-left: 5px solid #a42c83;
+    padding-left: 1%;
 }
-.FO-benef-firewall{
+.FO-benef-div{
     overflow: hidden;
+    margin-bottom: 1px;
 }
 .FO-benef-firewall-title{
     font-family: "Poppins", sans-serif;
     height: 32px;
     background-color: #a42c83;
+    color: white;
+    padding-left: 2%;
 }
 .FO-benef-firewall-div{
     display: flex;
@@ -1204,11 +1212,60 @@ i{
 }
 .FO-benef-firewall-div p{
     padding: 3% 0 1% 1.5%;
-    
+    font-size: 1em;
 }
 .FO-benef-firewall-div img{
     width: 50%;
-    padding: 3%
+    padding: 3%;
+}
+
+.FO-benef--monitoreo-title{
+    font-family: "Poppins", sans-serif;
+    height: 32px;
+    background-color: #a42c83;
+    color: white;
+    padding-left: 2%;
+}
+.FO-benef-monitoreo-div{
+    display: flex;
+    font-family: "League Spartan", sans-serif;
+    height: 0; 
+    transition: all .3s ease;
+}
+.FO-benef-monitoreo-div p{
+    padding: 5% 0 1% 1.5%;
+    font-size: 1em;
+}
+.FO-benef-monitoreo-div img{
+    width: 50%;
+    padding: 3%;
+}
+.FO-benef-velocidad-title{
+    font-family: "Poppins", sans-serif;
+    height: 32px;
+    background-color: #a42c83;
+    color: white;
+    padding-left: 2%;
+}
+.FO-benef-velocidad-div{
+    display: flex;
+    font-family: "League Spartan", sans-serif;
+    height: 0; 
+    transition: all .3s ease;
+}
+.FO-benef-velocidad-div p{
+    padding: 5% 0 1% 1.5%;
+    font-size: 1em;
+}
+.FO-benef-velocidad-div img{
+    width: 50%;
+    padding: 3%;
+}
+.bx{
+    color: white;
+}
+.arrow{
+    rotate: 90deg;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
