@@ -1164,7 +1164,7 @@ i{
     justify-content: flex-end;
 }
 .FO-p div{
-    background-color: #8c1c6c;
+    background-color: #a42c83;
     color: #ffffff;
     width: 92%;
     height: 90%;
@@ -1172,14 +1172,20 @@ i{
     border-radius: 20px;
     font-family: "League Spartan", sans-serif;
 }
+.FO-p div a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+}
+.FO-p div a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 15px black;
+}
 .FO-img{
     height: 48%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.FO-img img{
-    width: 60%;
 }
 .FO-benef{
     width: 50%;
@@ -1197,68 +1203,29 @@ i{
     overflow: hidden;
     margin-bottom: 1px;
 }
-.FO-benef-firewall-title{
+.FO-benef-title{
     font-family: "Poppins", sans-serif;
     height: 32px;
     background-color: #a42c83;
     color: white;
     padding-left: 2%;
 }
-.FO-benef-firewall-div{
+.FO-benef-content{
     display: flex;
     font-family: "League Spartan", sans-serif;
     height: 0;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
-.FO-benef-firewall-div p{
+.FO-benef-content p{
     padding: 3% 0 1% 1.5%;
     font-size: 1em;
 }
-.FO-benef-firewall-div img{
+.FO-benef-content img{
     width: 50%;
     padding: 3%;
 }
-
-.FO-benef--monitoreo-title{
-    font-family: "Poppins", sans-serif;
-    height: 32px;
-    background-color: #a42c83;
-    color: white;
-    padding-left: 2%;
-}
-.FO-benef-monitoreo-div{
-    display: flex;
-    font-family: "League Spartan", sans-serif;
-    height: 0; 
-    transition: all .3s ease;
-}
-.FO-benef-monitoreo-div p{
-    padding: 5% 0 1% 1.5%;
-    font-size: 1em;
-}
-.FO-benef-monitoreo-div img{
-    width: 50%;
-    padding: 3%;
-}
-.FO-benef-velocidad-title{
-    font-family: "Poppins", sans-serif;
-    height: 32px;
-    background-color: #a42c83;
-    color: white;
-    padding-left: 2%;
-}
-.FO-benef-velocidad-div{
-    display: flex;
-    font-family: "League Spartan", sans-serif;
-    height: 0; 
-    transition: all .3s ease;
-}
-.FO-benef-velocidad-div p{
-    padding: 5% 0 1% 1.5%;
-    font-size: 1em;
-}
-.FO-benef-velocidad-div img{
-    width: 50%;
+.FO-benef-equipos-div img{
+    width: 35%;
     padding: 3%;
 }
 .bx{
@@ -1268,23 +1235,5 @@ i{
     rotate: 90deg;
 }
 
-/*----------------------------------------------------------------------------------------------------*/
 
-.benefits-container{
-    display: flex;
-    flex-direction: column;
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-}
-.firewall-box{
-    overflow: hidden;
-}
-.firewall-p{
-    border: 2px solid black;
-    cursor: pointer;
-}
-.firewall-content{
-    height: 0;
-}
 

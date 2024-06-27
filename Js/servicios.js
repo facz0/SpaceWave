@@ -1,36 +1,54 @@
-let servicio = document.querySelector(".FO-benef-firewall-title");
-let flecha = document.querySelector(".bxs-right-arrow");
-servicio.addEventListener('click', () =>{
-    flecha.classList.toggle("arrow");
-    let height = 0;
-    let content = document.querySelector(".FO-benef-firewall-div");
+let servicio = document.getElementsByClassName("FO-benef-title");
+let flecha = document.getElementsByClassName("bxs-right-arrow");
+let content = document.getElementsByClassName("FO-benef-content");
+let height = 0
+servicio[0].addEventListener('click', () =>{
+    flecha[0].classList.toggle("arrow");
+    height = 0;
+    content[0];
     //console.log(content.clientHeight);
-    if(content.clientHeight == 0){
+    if(content[0].clientHeight == 0){
         height = 210;
     }
-    content.style.height = `${height}px`;
+    content[0].style.height = `${height}px`;
 });
 
-let monitoreo = document.querySelector(".FO-benef--monitoreo-title");
-let m_flecha = document.querySelector(".m");
-monitoreo.addEventListener('click', () =>{
-    m_flecha.classList.toggle("arrow");
-    let mon_height = 0;
-    let mon_content = document.querySelector(".FO-benef-monitoreo-div");
-    if(mon_content.clientHeight == 0){
-        mon_height = 180;
+servicio[1].addEventListener('click', () =>{
+    flecha[1].classList.toggle("arrow");
+    height = 0;
+    content[1];
+    if(content[1].clientHeight == 0){
+        height = 180;
     }
-    mon_content.style.height = `${mon_height}px`;
+    content[1].style.height = `${height}px`;
 });
 
-let velocidad = document.querySelector(".FO-benef-velocidad-title");
-let v_flecha = document.querySelector(".i");
-velocidad.addEventListener('click', () =>{
-    v_flecha.classList.toggle("arrow");
-    let v_height = 0;
-    let v_content = document.querySelector(".FO-benef-velocidad-div");
-    if(v_content.clientHeight == 0){
-        v_height = 180;
+servicio[2].addEventListener('click', () =>{
+    flecha[2].classList.toggle("arrow");
+    height = 0;
+    content[2];
+    if(content[2].clientHeight == 0){
+        height = 180;
     }
-    v_content.style.height = `${v_height}px`;
+    content[2].style.height = `${height}px`;
+})
+
+servicio[3].addEventListener('click', () =>{
+    flecha[3].classList.toggle("arrow");
+    height = 0;
+    content[3];
+    if(content[3].clientHeight == 0){
+        height = 180;
+    }
+    content[3].style.height = `${height}px`;
+})
+
+servicio[4].addEventListener('click', () =>{
+    flecha[4].classList.toggle("arrow");
+    height = 0;
+    content[4];
+    if(content[4].clientHeight == 0){
+        height = 190;
+    }
+    content[4].style.height = `${height}px`;
 })
