@@ -10,7 +10,7 @@ servicio[0].addEventListener('click', () =>{
     if(content[0].clientHeight == 0){
         height = 210;
     }
-    content[0].style.height = `${height}px`;
+    content[0].style.height = `${height}px`; 
 });
 
 servicio[1].addEventListener('click', () =>{

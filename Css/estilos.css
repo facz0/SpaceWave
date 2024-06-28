@@ -1163,6 +1163,10 @@ i{
     flex-direction: column;
     justify-content: flex-end;
 }
+.FO-p p{
+    font-size: 1.2em;
+    line-height: 1.1;
+}
 .FO-p div{
     background-color: #a42c83;
     color: #ffffff;
@@ -1195,7 +1199,7 @@ i{
     font-weight: 600;
     font-size: 2em;
     height: 48px;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
     border-left: 5px solid #a42c83;
     padding-left: 1%;
 }
@@ -1209,6 +1213,7 @@ i{
     background-color: #a42c83;
     color: white;
     padding-left: 2%;
+    cursor: pointer;
 }
 .FO-benef-content{
     display: flex;
@@ -1234,6 +1239,139 @@ i{
 .arrow{
     rotate: 90deg;
 }
+/*
+==========================================
+        Servicio Radio Enlace
+==========================================
+*/
+.RadioEnlace{
+    display: flex;
+    width: 90%;
+    height: 75vh;
+    margin: 6% auto;
+}
+.RadioEnlace-img-cont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.RadioEnlace-img-cont-img{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.RadioEnlace-img-cont-img img{
+    width: 95%;
+    height: 80%;
+    border: 2px solid #a42c83;
+    border-radius: 20px;
+}
+.RadioEnlace-img-cont-h2{
+    height: 48px;
+    border-left: 5px solid #a42c83;
+    padding-left: 1%;
+    
+}
+.RadioEnlace-img-cont-h2 h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #000;
+}
+.RadioEnlace-text-cont{
+    width: 50%;
+    padding: 6% 2% 2% 2%;   
+}
+.RadioEnlace-text-cont div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #a42c83;
+    border-radius: 20px;
+    padding: 4%;  
+    color: #ffffff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2; 
+}
+.RadioEnlace-text-cont ul{
+    margin-left: 3%;
+}
+.RadioEnlace-text-cont a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 13%;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #a42c83;
+    border: 2px solid #ffffff;
+    margin: 2% 0 0 2%;
+    border-radius: 20px;
+    transition: transform .6s;
+}
+.RadioEnlace-text-cont a:hover{
+    transform: scale(1.1);
+}
 
+/*
+==========================================
+        Servicio Wi - Fi
+==========================================
+*/
 
-
+.Wi-fi{
+    display: flex;
+    width: 90%;
+    height: 75vh;
+    margin: 6% auto;
+}
+.Wi-fi_txt-cont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.Wi-fi_txt-cont h2{
+    display: flex;
+    align-items: center;
+    height: 11%;
+    border-left: 5px solid #a42c83;
+    padding-left: 1%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.Wi-fi_txt-cont div{
+    height: 89%;
+    padding: 4% 4% 4% 0;
+}
+.Wi-fi_txt-cont div .p{
+    background-color: #a42c83;
+    height: 100%;
+    padding: 4%;
+    border-radius: 20px;
+    color: #ffffff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+.Wi-fi_img-cont{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-top: 4%;
+}
+.Wi-fi_img-cont div{
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #a42c83;
+    border-radius: 20px;
+}
+.Wi-fi_img-cont div img{
+    width: 94%;
+}
