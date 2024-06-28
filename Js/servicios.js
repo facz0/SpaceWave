@@ -52,3 +52,21 @@ servicio[4].addEventListener('click', () =>{
     }
     content[4].style.height = `${height}px`;
 })
+
+//============================================================//
+//                  Slider Starlink                           //
+//============================================================//
+
+let ruta = "images/home1starlink.webp";
+let img = document.querySelector(".starlink");
+img.setAttribute("src", ruta)
+let contador = 1;
+function carrusel_starlink(){
+    contador++;
+    if(contador>3){
+        contador = 1;
+    }
+    ruta = `images/home${contador}starlink.webp`;
+    img.setAttribute("src", ruta);
+}
+setInterval(carrusel_starlink, 4000);
