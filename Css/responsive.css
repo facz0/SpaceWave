@@ -1,0 +1,54 @@
+@media (width: 1920px){
+    /*----- HOME PAGE -----*/
+    /*--- Menu nav ---*/
+    .a-nav{
+        font-size: 1.9em;
+    }
+    /*-- sub menu --*/
+    .sub-nav{
+        font-size: 1.9em;
+    }
+    .coti-nav{
+        font-size: 1.3em;
+    }
+    /* Carrusell */
+    .h2-c2{
+        font-size: 7em;
+    }
+    .logros-container{
+        height: 44vh;
+    }
+    .cotizacion-img1{
+        top: -11.5%;
+    }
+    .partenrs-container{
+        height: 73vh;
+    }
+
+    .FO-p div{
+        font-size: 1.5em;
+    }
+    .FO-benef-title {
+        height: 50px;
+        font-size: 1.5em;
+    }
+    .RadioEnlace-text-cont div{
+        font-size: 1.7em;
+    }
+    .Wi-fi_txt-cont div .p{
+        font-size: 1.7em;
+    }
+    .satelital-txt-cont div{
+        font-size: 1.7em;
+    }
+    .cableado-txt-cont div{
+        font-size: 1.7em;
+    }
+    .Insfraestructura-txt-content div{
+        font-size: 1.7em;
+    }
+    /*------- FOOTER -------*/
+    footer{
+        height: 61vh;
+    }
+}

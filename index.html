@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/responsive.css">
     <!-- Link externo para importar íconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link para importar fuentes de google fonts -->
@@ -11,7 +12,7 @@
     rel="stylesheet">
     <!-- Link para el favicon -->
     <link rel="icon" href="images/logo-favicon2.png">
-    <title>Inicio</title>
+    <title>SpaceWave | Inicio</title>
 </head>
 
 <body>
@@ -20,32 +21,33 @@
 
         <img class="peru-flag" src="images/peru.png" alt="Peru-flag">
 
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="a-nav" href="index.html">Inicio</a></li>
+                <li class="li-nav"><a class="a-nav" href="nosotros.html" target="_blank">Nosotros</a></li>
+                <li class="li-nav"><a class="a-nav" href="servicios.html" target="_blank">Servicios</a>
+                    <ul class="sub-nav">
+                        <a href="servicios.html#FO" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
+                        <a href="servicios.html#radio" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
+                        <a href="servicios.html#wf" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
+                        <a href="servicios.html#it" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
+                        <a href="servicios.html#conec" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
+                        <a href="servicios.html#iaas" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
+                    </ul>
+                </li>
+                <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
+                <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
+            </ul>
+            
+            <section class="coti-nav">
+                <a class="a-coti-nav" href="formulario.html" target="_blank">
+                    Solicita tu cotización y <br> ¡Obtén un descuento!
+                </a>
+            </section>
+        </nav>
     </header>
 
-    <nav>
-        <ul class="ul-nav">
-            <li class="li-nav"><a class="a-nav" href="index.html">Inicio</a></li>
-            <li class="li-nav"><a class="a-nav" href="nosotros.html" target="_blank">Nosotros</a></li>
-            <li class="li-nav"><a class="a-nav" href="servicios.html" target="_blank">Servicios</a>
-                <ul class="sub-nav">
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
-                </ul>
-            </li>
-            <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
-            <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
-        </ul>
-
-        <section class="coti-nav">
-            <a class="a-coti-nav" href="">
-                Solicita tu cotización y <br> ¡Obtén un descuento!
-            </a>
-        </section>
-    </nav>
+    
 
     <main>
         <!------------ Carrusel ------------>
@@ -59,7 +61,7 @@
                         "TU ORGANIZACIÓN CONECTADA AL MUNDO, A UNA <br> GRAN VELOCIDAD”
                     </p>
                     <section class="section-c1">
-                        <a href=""> MÁS INFORMACIÓN </a>
+                        <a href="servicios.html#FO"> MÁS INFORMACIÓN </a>
                         <i class='bx bxs-right-arrow-circle bx-sm'></i>
                     </section>
                 </section>
@@ -72,7 +74,7 @@
                         Internet satelital de alta velocidad
                     </p>
                     <section class="section-c2">
-                        <a href=""> MÁS INFORMACIÓN </a>
+                        <a href="servicios.html#ST"> MÁS INFORMACIÓN </a>
                         <i class='bx bxs-right-arrow-circle bx-sm'></i>
                     </section>
                 </section>
@@ -86,7 +88,7 @@
                         nosotros la tenemos lista para ti.
                     </p>
                     <section class="section-c3">
-                        <a href=""> MÁS INFORMACIÓN </a>
+                        <a href="servicios.html#iaas"> MÁS INFORMACIÓN </a>
                         <i class='bx bxs-right-arrow-circle bx-sm'></i>
                     </section>
                 </section>
@@ -162,7 +164,7 @@
                     </div>                  
                     <div class="card-link-container">
                         <div class="card-link">
-                            <a href="">
+                            <a href="servicios.html#ST">
                             MÁS INFORMACIÓN
                             </a>
                             <img src="images/flecha-arriba.png" alt="">  
@@ -179,7 +181,7 @@
                     </div>                   
                     <div class="card-link-container">
                         <div class="card-link">
-                          <a href="">
+                          <a href="servicios.html#WF">
                             MÁS INFORMACIÓN
                             </a>
                             <img src="images/flecha-arriba.png" alt="">  
@@ -196,7 +198,7 @@
                     </div>                   
                     <div class="card-link-container">
                         <div class="card-link">
-                          <a href="">
+                          <a href="servicios.html#FO">
                             MÁS INFORMACIÓN
                             </a>
                             <img src="images/flecha-arriba.png" alt="">  
@@ -213,7 +215,7 @@
                     </div>                   
                     <div class="card-link-container">
                         <div class="card-link">
-                            <a href="">
+                            <a href="servicios.html#iaas">
                             MÁS INFORMACIÓN
                             </a>
                             <img src="images/flecha-arriba.png" alt="">  
@@ -233,7 +235,7 @@
                 </h2>
                 <div class="cot-request-container">
                     <img src="images/icons/atencion-al-cliente.png" alt="">
-                    <a href="">
+                    <a href="formulario.html">
                         SOLICITA TU <br> COTIZACION
                     </a>
                 </div>

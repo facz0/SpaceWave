@@ -13,31 +13,31 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
-
 .peru-flag{
-   height: 70%;
+   width: 4%;
 }
-
 .logo{
-    height: 90%; 
+    width: 15%;
 }
 
 /*-- Barra de navegación --*/
-
 nav{
     width: 100%;
+    height: 100%;
     background-color: #4b474a;
     display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    align-items: center;
+    
 }
 .ul-nav{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    height: 8vh;
+    height: 100%;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -57,7 +57,7 @@ nav{
 }
 .sub-nav{
     width: 15%;
-    height: 500%;
+    height: 450%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -70,6 +70,7 @@ nav{
     padding-left: .7%;
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
 }
 .sub-nav a{
     display: flex;
@@ -89,16 +90,15 @@ nav{
     color: #ab4c90;
 }
 
-
-
 .coti-nav{
     display: flex;
     text-align: center;
-    width: 15%;
+    width: 17%;
+    height: 74%;
+    margin-right: 8px;
     box-sizing: border-box;
     background-color: #a42c83;
     border-radius: 20px;
-    margin: 2px 0 2px 0;
     justify-content: center;
     align-items: center;
     font-family: "League Spartan", sans-serif;
@@ -111,9 +111,12 @@ nav{
 .a-coti-nav{
     color: white;
     text-decoration: none;
+
 }
 
-
+main{
+    margin-top: 12vh;
+}
 
 /*-- carrusell --*/
 
@@ -213,7 +216,7 @@ nav{
 
 /*----- CARRUSEL 2 -----*/
     .background2{
-        background-image: url(img-css/home_a_hero_d.jpg);
+        background-image: url(img-css/home_a_hero_d.png);
         background-size: cover;
     }
 
@@ -705,6 +708,7 @@ footer{
 /*--------------------- PARTNERS site ---------------------*/
 .partners-main{
     margin: 5% 3% 5% 3%;
+    margin-top: 22vh;
 }
 
 section div img{
@@ -722,6 +726,7 @@ section div h2{
     font-family: "League Spartan", sans-serif;
     font-size: 1.2em;
     padding: 0 5%;
+    line-height: 1.1;
 }
 .secPar-img-container{
     width: 40%;
@@ -731,6 +736,9 @@ section div h2{
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.69));
     background-color:#8c1c6c;
     border-radius: 0 17px 17px 0;
+}
+.secPar-img-content{
+    width: 59%;
 }
 .secImpar-img-container{
     width: 40%;
@@ -794,7 +802,7 @@ section div h2{
 
 /*------------------- Formulario site -------------------*/
 .formulario-main{
-    height: 110vh;
+    height: 95vh;
     background-image: url(img-css/fondo\ cotizacion.jpg);
     background-size: cover;
     display: flex;
@@ -807,8 +815,8 @@ section div h2{
     box-shadow: 0 0 10px #000;
     backdrop-filter: blur(10px);
     width: 85%;
-    height: 80%;
-    margin: auto;
+    height: 88%;
+    margin: 1% auto 0 auto;
     border-radius: 20px;
 }
 
@@ -980,12 +988,13 @@ i{
     font-family: righteous;
     width: 100%;
     height: 100%;
+    margin-top: 12vh;
 }
   /* DISEÑO DE LA CABECERA */
 .nosotros-h1 {
     text-align: center;
     color: rgb(112, 5, 96);
-    margin-top: 30PX;
+    margin-top: 7%;
 }
    
 .general {
@@ -996,13 +1005,13 @@ i{
     padding-left: 30px;
     padding-right: 30px;
 }
-.general aside{
+.general article{
     width: 70%;
     height: auto;
     margin-right: 30px;
 }
   
-.general aside h2{
+.general article h2{
     color: rgb(112, 5, 96);
 }
   
@@ -1011,7 +1020,7 @@ i{
     text-align: justify;
     font-size: 20px;
 }
-  /* diseño al aside interno */
+  /* diseño al article interno */
 .indicadores{
     display: flex;
     text-align: center;
@@ -1051,7 +1060,7 @@ i{
     .general{
       flex-direction: column;
     }
-    .general aside{
+    .general article{
       text-align: center;
       width: 100%;
       height: auto;
@@ -1132,11 +1141,13 @@ i{
 }
 
 /*--------------------------------- Servicios site ---------------------------------*/
-
+.servicios-main{
+    margin-top: 19vh;
+}
 .fibraOptica{
     width: 90%;
     /* height: 85vh; */
-    margin: 3% auto;
+    margin: 3%  auto 7% auto;
     display: flex;
 }
 .FO-definition{
@@ -1175,15 +1186,25 @@ i{
     padding: 3% 3%;
     border-radius: 20px;
     font-family: "League Spartan", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 .FO-p div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29%;
+    height: 13%;
     text-decoration: none;
-    font-size: 1.3em;
-    color: white;
+    background-color: #ffffff;
+    color: #a42c83;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: transform .6s;
+    font-size: 1.4em;
 }
 .FO-p div a:hover{
-    text-decoration: underline;
-    text-shadow: 0 0 15px black;
+    transform: scale(1.1);
 }
 .FO-img{
     height: 48%;
@@ -1248,7 +1269,7 @@ i{
     display: flex;
     width: 90%;
     height: 75vh;
-    margin: 6% auto;
+    margin: 7% auto;
 }
 .RadioEnlace-img-cont{
     display: flex;
@@ -1327,7 +1348,7 @@ i{
     display: flex;
     width: 90%;
     height: 75vh;
-    margin: 6% auto;
+    margin: 7% auto;
 }
 .Wi-fi_txt-cont{
     width: 50%;
@@ -1410,7 +1431,7 @@ i{
     grid-template-columns: 27% 73%;
     width: 90%;
     height: 82vh;
-    margin: 6% auto;
+    margin: 7% auto;
 }
 .satelital h2{
     grid-column: 1 / 3;
@@ -1435,6 +1456,7 @@ i{
     align-items: center;
     justify-content: center;
     border: 2px solid #a42c83;
+    border-radius: 20px;
 }
 .satelital-img div img{
     width: 84%;
@@ -1504,3 +1526,151 @@ i{
 ==========================================
 */
 
+.conectividad{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 55% 45%;
+    width: 90%;
+    height: 82vh;
+    margin: 7% auto;
+}
+.conectividad h2{
+    grid-column: 1 / 3;
+    border-left: 5px solid #a42c83;
+    padding-left: 1%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.cableado-txt-cont{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cableado-txt-cont div{
+    width: 95%;
+    height: 90%;
+    background-color: #a42c83;
+    border-radius: 20px;
+    padding: 4%;
+    color: #ffffff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+.cableado-txt-cont div ul{
+    margin-left: 3%;
+}
+.cableado-txt-cont div a{
+    display: flex;
+    height: 10%;
+    width: 22%;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 1%;
+    transition: transform .6s;
+}
+.cableado-txt-cont div a:hover{
+    transform: scale(1.1);
+}
+.cableado-img-cont{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cableado-img-cont div{
+    width: 90%;
+    height: 90%;
+    padding: 4%;
+    border: 2px solid #a42c83;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+.cableado-img-cont div img{
+    width: 100%;
+    animation: fade 3.5s infinite; 
+}
+
+/*
+==========================================
+      Servicio IaaS
+==========================================
+*/
+
+.Insfraestructura{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 42% 58%;
+    width: 90%;
+    height: 82vh;
+    margin: 7% auto;
+}
+.Insfraestructura h2{
+    grid-column: 1 / 3;
+    border-left: 5px solid #a42c83;
+    padding-left: 1%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+.Insfraestructura-img-content{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Insfraestructura-img-content div{
+    width: 92%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #a42c83;
+    border-radius: 20px;
+}
+.Insfraestructura-img-content div img{
+    width: 91%;
+}
+.Insfraestructura-txt-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Insfraestructura-txt-content div{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: #a42c83;
+    border-radius: 20px;
+    padding: 4%;
+    color: #ffffff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+.Insfraestructura-txt-content div a{
+    display: flex;
+    height: 12%;
+    width: 22%;
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform .6s;
+}
+.Insfraestructura-txt-content div a:hover{
+    transform: scale(1.1);
+}

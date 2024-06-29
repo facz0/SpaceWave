@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/responsive.css">
     <!-- Link externo para importar íconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link para importar fuentes de google fonts -->
@@ -17,40 +18,38 @@
 <body>
     <header>
         <img class="logo" src="images/logo_1Small.png" alt="logo-SpaceWave">
-
         <img class="peru-flag" src="images/peru.png" alt="Peru-flag">
 
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="a-nav" href="index.html" target="_blank">Inicio</a></li>
+                <li class="li-nav"><a class="a-nav" href="nosotros.html" target="_blank">Nosotros</a></li>
+                <li class="li-nav"><a class="a-nav" href="servicios.html">Servicios</a>
+                    <ul class="sub-nav">
+                        <a href="servicios.html#FO" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
+                        <a href="servicios.html#radio" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
+                        <a href="servicios.html#wf" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
+                        <a href="servicios.html#it" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
+                        <a href="servicios.html#conec" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
+                        <a href="servicios.html#iaas" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
+                    </ul>
+                </li>
+                <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
+                <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
+            </ul>
+    
+            <section class="coti-nav">
+                <a class="a-coti-nav" href="formulario.html" target="_blank">
+                    Solicita tu cotización y <br> ¡Obtén un descuento!
+                </a>
+            </section>
+        </nav>
     </header>
 
-    <nav>
-        <ul class="ul-nav">
-            <li class="li-nav"><a class="a-nav" href="index.html">Inicio</a></li>
-            <li class="li-nav"><a class="a-nav" href="nosotros.html">Nosotros</a></li>
-            <li class="li-nav"><a class="a-nav" href="">Servicios</a>
-                <ul class="sub-nav">
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
-                </ul>
-            </li>
-            <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
-            <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
-        </ul>
-
-        <section class="coti-nav">
-            <a class="a-coti-nav" href="">
-                Solicita tu cotización y <br> ¡Obtén un descuento!
-            </a>
-        </section>
-    </nav>
-
-    <main>
-        <section class="fibraOptica">
+    <main class="servicios-main">
+        <section class="fibraOptica" class="FO-p">
             <article class="FO-definition">
-                <h2>Fibra Óptica</h2>
+                <h2 id="FO">Fibra Óptica</h2>
                 <div class="FO-p">
                     <div>
                         <p>
@@ -59,7 +58,7 @@
                             Gracias a nustra amplia capacidad en ancho de banda le dirás adiós al internet lento en tu empresa. También te ofrecemos un internet 
                             con una de las latencias más bajas del mercado garantizándote una sincronía total en tus servidores internos. <br><br>
                         </p>
-                        <a href="formulario.html">Solicítalo aquí</a> 
+                        <a href="formulario.html" target="_blank" id="radio">Solicítalo aquí</a> 
                     </div>
                     
                 </div>
@@ -131,7 +130,7 @@
             </article> 
         </section>
 
-        <section class="RadioEnlace">
+        <section class="RadioEnlace" id="RD">
             <article class="RadioEnlace-img-cont">
                 <div class="RadioEnlace-img-cont-h2">
                     <h2>Radio Enlace: Punto a Punto</h2> 
@@ -156,12 +155,12 @@
                         <li>Puertos Gigabit</li>
                         <li>Instalación gratis</li>
                     </ul>
-                    <a href="">Solicítalo aquí</a>
+                    <a href="formulario.html" target="_blank" id="wf">Solicítalo aquí</a>
                 </div>
             </article>
         </section>
         
-        <section class="Wi-fi">
+        <section class="Wi-fi" id="WF">
             <article class="Wi-fi_txt-cont">
                 <h2>Redes WiFi</h2>
                 <div>
@@ -178,9 +177,8 @@
                             <li>Creación de distintas redes asignadas a distintos Access Point's</li>
                             <li>Adopción automática</li>
                         </ul>
-                        <a href="">Solicítalo aquí</a>
+                        <a href="formulario.html" target="_blank" id="it">Solicítalo aquí</a>
                     </div>
-                    
                 </div>
                 
             </article>
@@ -192,7 +190,7 @@
             </article>
         </section>
 
-        <section class="satelital">
+        <section class="satelital" id="ST">
             <h2>Internet Satelital</h2>
             <article class="satelital-img">
                 <div >
@@ -219,20 +217,69 @@
                         <li>Proceso de activación fácil e intuitivo.</li>
                         <li>Modelo Todoterreno, Home y Marítimo.</li>
                     </ul>
-                    <a href="">Solicítalo aquí</a>
+                    <a href="formulario.html" target="_blank" id="conec">Solicítalo aquí</a>
                 </div>
             </article>
         </section>
 
-        <section class="conectividad">
+        <section class="conectividad" id="Conect">
             <h2>Conectividad</h2>
-            <article>
+            <article class="cableado-txt-cont">
                 <div>
-                    <p></p>
+                    <p>
+                        En SpaceWave también realizamos "Cableado estructurado" para la distribución 
+                        física de tu infraestructura de red. Contamos con personal certificado en 
+                        cableado estructurado que se encargará de la arquitectura para el recorrido, 
+                        tu solos nos das tus planos y nosotros hacemos todo el trabajo. 
+                        Además te ofrecemos un servicio de soporte 24/7 el cuál te ayudará en casos 
+                        de fallas en la conexión, rupturas de cable, creación de nuevos puntos y ductos,
+                        entre otras incidencias. 
+                    </p><br>
+                    <p>También te ofrecemos:</p>
+                    <ul>
+                        <li>Cables UTP certificados y reforzados categoría 6.</li>
+                        <li>Switches de última generación con puertos Gibabit.</li>
+                        <li>Racks de cualquier clasificación y tamaño.</li>
+                        <li>Conectores blindados para mayor seguridad</li>
+                    </ul>
+                    <a href="formulario.html" target="_blank" id="iaas">Solicítalo aquí</a>
                 </div>
             </article>
-            <article>
+            <article class="cableado-img-cont">
+                <div>
+                    <img src="" alt="cableado" class="cableado">
+                </div>
+            </article>
+        </section>
 
+        <section class="Insfraestructura">
+            <h2>Infrastructure as a service (IaaS)</h2>
+            <article class="Insfraestructura-img-content">
+                <div>
+                    <img src="images/iaas.webp" alt="">
+                </div>
+            </article>
+            <article class="Insfraestructura-txt-content">
+                <div>
+                    <p>
+                        En SpaceWave contamos con el servicio de IaaS. Esta modalidad 
+                        te permite tener un almacenamiento en Cloud. Vas a poder almacenar 
+                        todo cuanto desees: bases de datos, documentos de la empresa, servidores, 
+                        fotos, videos, etc... 
+                    </p>
+                    <p>
+                        Si tu presupuesto no te permite tener un datacenter propio no hay problema 
+                        puedes arrendar espacio con nostros. Te garantizamos una alta velicidad en transmición 
+                        de información para que proceses como si lo tuvieras de manera local. También 
+                        tenemos un sistema de backup el cual almacena tu información en caso de que la pierdas 
+                        que la borres a causa de alguna incidencia. Ofrecemos backup diario, semanal y mensual. 
+                    </p>
+                    <p>
+                        Tenemos un equipo de soporte 24/7 que te atenderá en tus dudas y te 
+                        capacitará ante cualquier incidencia. 
+                    </p>
+                    <a href="formulario.html" target="_blank">Solicítalo aquí</a>
+                </div>
             </article>
         </section>
 

@@ -70,3 +70,21 @@ function carrusel_starlink(){
     img.setAttribute("src", ruta);
 }
 setInterval(carrusel_starlink, 4000);
+
+//============================================================//
+//                  Slider Conectividad                       //
+//============================================================//
+
+let ruta_c = "images/cableado1estructurado.jpg";
+let img_c = document.querySelector(".cableado");
+img_c.setAttribute("src", ruta_c);
+let contador_c = 1;
+function carrusel_conectividad(){
+    contador_c++;
+    if(contador_c>3){
+        contador_c = 1;
+    }
+    ruta_c = `images/cableado${contador_c}estructurado.jpg`
+    img_c.setAttribute("src", ruta_c);
+}
+setInterval(carrusel_conectividad, 3500)

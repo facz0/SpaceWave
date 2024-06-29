@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/responsive.css">
     <!-- Link externo para importar íconos -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link para importar fuentes de google fonts -->
@@ -16,34 +17,34 @@
 <body>
     <header>
         <img class="logo" src="images/logo_1Small.png" alt="logo-SpaceWave">
-
         <img class="peru-flag" src="images/peru.png" alt="Peru-flag">
 
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="a-nav" href="index.html" target="_blank">Inicio</a></li>
+                <li class="li-nav"><a class="a-nav" href="nosotros.html" target="_blank">Nosotros</a></li>
+                <li class="li-nav"><a class="a-nav" href="servicios.html" target="_blank">Servicios</a>
+                    <ul class="sub-nav">
+                        <a href="servicios.html#FO" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
+                        <a href="servicios.html#radio" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
+                        <a href="servicios.html#wf" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
+                        <a href="servicios.html#it" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
+                        <a href="servicios.html#conec" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
+                        <a href="servicios.html#iaas" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
+                    </ul>
+                </li>
+                <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
+                <li class="li-nav"><a class="a-nav" href="formulario.html">Contáctanos</a></li>
+            </ul>
+    
+            <section class="coti-nav">
+                <a class="a-coti-nav" href="formulario.html" target="_blank">
+                    Solicita tu cotización y <br> ¡Obtén un descuento!
+                </a>
+            </section>
+        </nav>
     </header>
-    <nav>
-        <ul class="ul-nav">
-            <li class="li-nav"><a class="a-nav" href="">Inicio</a></li>
-            <li class="li-nav"><a class="a-nav" href="nosotros.html">Nosotros</a></li>
-            <li class="li-nav"><a class="a-nav" href="">Servicios</a>
-                <ul class="sub-nav">
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
-                </ul>
-            </li>
-            <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
-            <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
-        </ul>
-
-        <section class="coti-nav">
-            <a class="a-coti-nav" href="">
-                Solicita tu cotización y <br> ¡Obtén un descuento!
-            </a>
-        </section>
-    </nav>
+    
 
     <main class="formulario-main">
         <article class="fomulario-container">

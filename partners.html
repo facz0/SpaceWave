@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/responsive.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic:wdth@83.8&family=League+Spartan:wght@100..900&family=Righteous&display=swap"
     rel="stylesheet">
@@ -13,35 +14,33 @@
 <body>
     <header>
         <img class="logo" src="images/logo_1Small.png" alt="logo-SpaceWave">
-
         <img class="peru-flag" src="images/peru.png" alt="Peru-flag">
 
+        <nav>
+            <ul class="ul-nav">
+                <li class="li-nav"><a class="a-nav" href="index.html" target="_blank">Inicio</a></li>
+                <li class="li-nav"><a class="a-nav" href="nosotros.html" target="_blank">Nosotros</a></li>
+                <li class="li-nav"><a class="a-nav" href="servicios.html" target="_blank">Servicios</a>
+                    <ul class="sub-nav">
+                        <a href="servicios.html#FO" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
+                        <a href="servicios.html#radio" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
+                        <a href="servicios.html#wf" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
+                        <a href="servicios.html#it" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
+                        <a href="servicios.html#conec" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
+                        <a href="servicios.html#iaas" target="_blank"><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
+                    </ul>
+                </li>
+                <li class="li-nav"><a class="a-nav" href="partners.html">Partners</a></li>
+                <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
+            </ul>
+    
+            <section class="coti-nav">
+                <a class="a-coti-nav" href="formulario.html" target="_blank">
+                    Solicita tu cotización y <br> ¡Obtén un descuento!
+                </a>
+            </section>
+        </nav>
     </header>
-
-    <nav>
-        <ul class="ul-nav">
-            <li class="li-nav"><a class="a-nav" href="">Inicio</a></li>
-            <li class="li-nav"><a class="a-nav" href="nosotros.html">Nosotros</a></li>
-            <li class="li-nav"><a class="a-nav" href="">Servicios</a>
-                <ul class="sub-nav">
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Fibra óptica</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Radio Enlace</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Redes Wi-fi</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Internet satelital</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>Conectividad</li></a>
-                    <a href=""><i class='bx bx-right-arrow-alt'></i><li>IaaS</li></a>
-                </ul>
-            </li>
-            <li class="li-nav"><a class="a-nav" href="partners.html" target="_blank">Partners</a></li>
-            <li class="li-nav"><a class="a-nav" href="formulario.html" target="_blank">Contáctanos</a></li>
-        </ul>
-
-        <section class="coti-nav">
-            <a class="a-coti-nav" href="">
-                Solicita tu cotización y <br> ¡Obtén un descuento!
-            </a>
-        </section>
-    </nav>
 
     <main class="partners-main">
         <section class="sec1">
@@ -55,9 +54,8 @@
                     Con una amplia gama de routers, switches, puntos de acceso y software, MikroTik ofrece todo lo que necesita para crear una red 
                     segura y escalable para su negocio.
                 </p> <br>
-                <p>Ventajas de Mikrotik: </p> <br>
                 <ul>
-                    <li><strong>Firewalls:</strong> MikroTik ofrece firewalls potentes para proteger su red de amenazas externas.</li>
+                    <li><strong>Firewall:</strong> MikroTik ofrece firewalls potentes para proteger su red de amenazas externas.</li>
                     <li><strong>VPN:</strong> MikroTik ofrece soluciones VPN seguras para conectar de forma remota a su red.</li>
                     <li><strong>Control de acceso:</strong> MikroTik ofrece funciones de control de acceso para controlar quién puede acceder a su red.</li>
                 </ul>
@@ -75,7 +73,7 @@
                     de infraestructura y servidores de clase mundial. Contamos con servidores Cisco de última generación que ofrecen un rendimiento 
                     excepcional para ejecutar aplicaciones empresariales exigentes, desde bases de datos y análisis de big data hasta inteligencia 
                     artificial y aprendizaje automático.
-                </p> <br>
+                </p>
                 <p>
                     Con Cisco protejemos tus datos y aplicaciones confidenciales con las funciones de seguridad integradas en los servidores Cisco, 
                     que incluyen cifrado de datos, autenticación sólida y prevención de intrusiones. 
@@ -104,14 +102,14 @@
 
         <section class="sec4">
             <div class="secPar-img-container">
-                <img src="images/starlink_standard_500x500_3.png" alt="">
+                <img src="images/starlink_standard_500x500_3.png" alt="" class="secPar-img-content">
             </div>
             <div class="section-text-container">
                 <h2>Starlink</h2>
                 <p>
-                    En SpaceWave, nos entusiasma ser socios de Starlink, el innovador servicio de internet satelital de SpaceX, para ofrecer a tu negocio 
+                    En SpaceWave, nos entusiasma ser distribuidores oficiales de Starlink, el innovador servicio de internet satelital de SpaceX, para ofrecer a tu negocio 
                     una conectividad de alta velocidad confiable y de bajo costo, incluso en las áreas más remotas. Disfruta de velocidades de descarga y 
-                    carga de hasta 220 Mbps, ideales para videoconferencias, descargas de archivos grandes y uso intensivo de la nube. La baja latencia de 
+                    carga de hasta 300 Mbps, ideales para videoconferencias, descargas de archivos grandes y uso intensivo de la nube. La baja latencia de 
                     Starlink te permite realizar actividades en tiempo real como juegos online y videollamadas sin interrupciones. Starlink está 
                     disponible en una amplia y creciente zona de cobertura, incluyendo áreas rurales y remotas donde las opciones tradicionales de 
                     internet son limitadas o inexistentes.
