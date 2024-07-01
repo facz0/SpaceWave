@@ -12,9 +12,9 @@ let operacion = 0
 let counter = 0
 let widthImg = 100 / sliderSection.length
 
-// setInterval(() => {
-//     moveToRight()
-// }, 3000)
+setInterval(() => {
+    moveToRight()
+}, 3000)
 
 //crear las funciones que se ejecutarán al usar el evento click
 function moveToRight (){
